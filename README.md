@@ -22,6 +22,7 @@
 10/24 -> rankingA() now works with CollegeFactual Function,             Started working with Flask
 
 10/26 -> Started more learning about flask, reportA() function works for first~20 colleges
+
 10/27 -> averageA() functions works all the time now, began working on way to join the two lists from C and P together
 
 10/30 -> converted college variables from CF and P functions to uniform strings
