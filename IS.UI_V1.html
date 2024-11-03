@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Custom College Search</title>
+		<h1>Custom College Search</h1>
+
+		<!-- Link to CSS File -->
+        <link href="IS.UI_V1.css" rel="stylesheet" type="text/css">
+
+		<!-- Javascript Section -->
+		<script>
+			//export FLASK_APP=main.py
+			//export FLASK_ENV=development
+			//flask run
+            /*
+			var SIM_finalchoice = 0
+
+			//Report Arrays
+			const namereport_array = []
+			const imreport_array = []
+
+			const namestorage_array = []
+			const imstorage_array = []
+
+			//Variable functions for each attribute
+			
+			//Intended Major Name
+			function intendMajorF() {
+    			let intendMajorV =
+        		document.getElementById("intendMajorI").value;
+
+				namereport_array.push("Intended Major: " + intendMajorV);
+				namestorage_array.push(intendMajorV);
+        	}
+			//Intended Major Importance
+			function intendMajorFIM() {
+				let IMIM_choices = document.getElementsByName("a")
+				for(a=0; a < IMIM_choices.length; a++) {
+					if (IMIM_choices[a].checked) {
+						let IMIM_finalchoice = IMIM_choices[a].value;
+
+						imreport_array.push("Intended Major: " + IMIM_finalchoice);
+						imstorage_array.push(IMIM_finalchoice);
+						break
+					}
+				}
+			}
+			
+			//Campus Safety Importance
+			function SafetyIM() {
+				let SIM_choices = document.getElementsByName("b")
+				for (b=0; b < SIM_choices.length; b++) {
+					if (SIM_choices[b].checked) {
+						SIM_finalchoice = SIM_choices[b].value;
+
+						imreport_array.push(" Safety: " + SIM_finalchoice);
+						imstorage_array.push(SIM_finalchoice);
+
+						//console.log(SIM_finalchoice)
+						break
+					}
+				}
+			}
+
+			//Pre-report function
+			function PreReportF() {
+				let fullReport = "Current Attributes Report: " + namereport_array;
+				console.log(fullReport);
+
+				let fullReportIM = "Current Importance Report: " + imreport_array;
+				console.log(fullReportIM);
+			}
+
+			//Final Report function
+			function FinalReportF() {
+				console.log(SIM_finalchoice)
+				let sendSIMfc = SIM_finalchoice
+				window.alert(sendSIMfc)
+				//$.ajax({
+					//url:"/test",
+					//type:"POST",
+					//contentType:"application/json",
+					//data:sendSIMfc
+
+				//})
+			}
+         */
+		</script>
+
+	</head>
+	
+	<body>
+		<!-- Intended Major -->
+		<article1 id="intendMajor">
+			<br /> &nbsp Intended Major:
+			<input id="intendMajorI" type="text">
+			<button onclick="intendMajorF()">Submit</button>
+			<br /><br />
+			&nbsp Importance:
+
+			<input type="radio" value="0" name="a">
+			<input type="radio" value="1" name="a">
+			<input type="radio" value="2" name="a">
+			<input type="radio" value="3" name="a">
+			<input type="radio" value="4" name="a">
+			<input type="radio" value="5" name="a">
+			<input type="radio" value="6" name="a">
+			<input type="radio" value="7" name="a">
+			<input type="radio" value="8" name="a">
+			<input type="radio" value="9" name="a">
+
+			<button onclick="intendMajorFIM()">Submit</button><br />
+
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9
+		</article1>
+
+		<!-- Overall Prestige-->
+      <article2 id="oPrestige">
+         <br /> &nbsp Overall Prestige: <br /> <br />
+         &nbsp Importance:
+
+
+            <input type="radio"  value="0" name="b">
+            <input type="radio"  value="1" name="b">
+            <input type="radio"  value="2" name="b">
+            <input type="radio"  value="3" name="b">
+            <input type="radio"  value="4" name="b">
+            <input type="radio"  value="5" name="b">
+            <input type="radio"  value="6" name="b">
+            <input type="radio"  value="7" name="b">
+            <input type="radio"  value="8" name="b">
+            <input type="radio"  value="9" name="b">
+
+
+            <button>Submit</button>
+
+
+            <br />
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9
+
+
+
+
+      </article2>
+
+    	<!-- Undergrad School-->
+      <article3 id="usRanking">
+         <br /> &nbsp Undergrad School: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp <button>Submit</button>
+            <br />
+
+		 &nbspLAS
+		 <input type="radio" value="L" name="c">
+		&nbspENGR
+		 <input type="radio" value="E" name="c">
+		 &nbspBusiness
+		 <input type="radio" value="B" name="c">
+		 &nbspGeneralS
+		 <input type="radio" value="G" name="c">
+		 &nbspPreMed
+		 <input type="radio" value="P" name="c">
+
+
+		 <br /> <br />
+         &nbsp Importance:
+
+
+            <input type="radio"  value="0" name="b">
+            <input type="radio"  value="1" name="b">
+            <input type="radio"  value="2" name="b">
+            <input type="radio"  value="3" name="b">
+            <input type="radio"  value="4" name="b">
+            <input type="radio"  value="5" name="b">
+            <input type="radio"  value="6" name="b">
+            <input type="radio"  value="7" name="b">
+            <input type="radio"  value="8" name="b">
+            <input type="radio"  value="9" name="b">
+
+
+            <button>Submit</button>
+
+
+            <br />
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9
+
+
+
+
+      </article3>
+
+	<!------------------------------------------------------------------------------------>
+	<!-- Start of Princeton Review Functions-->
+   <article4 id="sSatisfaction">
+         <br /> &nbsp Student Satisfaction: <br /> <br />
+         &nbsp Importance:
+
+
+            <input type="radio"  value="0" name="b">
+            <input type="radio"  value="1" name="b">
+            <input type="radio"  value="2" name="b">
+            <input type="radio"  value="3" name="b">
+            <input type="radio"  value="4" name="b">
+            <input type="radio"  value="5" name="b">
+            <input type="radio"  value="6" name="b">
+            <input type="radio"  value="7" name="b">
+            <input type="radio"  value="8" name="b">
+            <input type="radio"  value="9" name="b">
+
+
+            <button>Submit</button>
+
+
+            <br />
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9
+
+
+   </article4>
+
+   <article5 id="spScene">
+         <br /> &nbsp Sports Scene: <br /> <br />
+         &nbsp Importance:
+
+
+            <input type="radio"  value="0" name="b">
+            <input type="radio"  value="1" name="b">
+            <input type="radio"  value="2" name="b">
+            <input type="radio"  value="3" name="b">
+            <input type="radio"  value="4" name="b">
+            <input type="radio"  value="5" name="b">
+            <input type="radio"  value="6" name="b">
+            <input type="radio"  value="7" name="b">
+            <input type="radio"  value="8" name="b">
+            <input type="radio"  value="9" name="b">
+
+
+            <button>Submit</button>
+
+
+            <br />
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9
+
+
+   </article5>
+
+   <article6 id="cBeauty">
+         <br /> &nbsp Campus Beauty: <br /> <br />
+         &nbsp Importance:
+
+
+            <input type="radio"  value="0" name="b">
+            <input type="radio"  value="1" name="b">
+            <input type="radio"  value="2" name="b">
+            <input type="radio"  value="3" name="b">
+            <input type="radio"  value="4" name="b">
+            <input type="radio"  value="5" name="b">
+            <input type="radio"  value="6" name="b">
+            <input type="radio"  value="7" name="b">
+            <input type="radio"  value="8" name="b">
+            <input type="radio"  value="9" name="b">
+
+
+            <button>Submit</button>
+
+
+            <br />
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9
+
+
+
+
+      </article6>
+
+      <article7 id="cTown">
+         <br /> &nbsp College Town: <br /> <br />
+         &nbsp Importance:
+
+
+            <input type="radio"  value="0" name="b">
+            <input type="radio"  value="1" name="b">
+            <input type="radio"  value="2" name="b">
+            <input type="radio"  value="3" name="b">
+            <input type="radio"  value="4" name="b">
+            <input type="radio"  value="5" name="b">
+            <input type="radio"  value="6" name="b">
+            <input type="radio"  value="7" name="b">
+            <input type="radio"  value="8" name="b">
+            <input type="radio"  value="9" name="b">
+
+
+            <button>Submit</button>
+
+
+            <br />
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9
+
+
+
+
+      </article7>
+
+      <article8 id="Diversity">
+         <br /> &nbsp Diversity: <br /> <br />
+         &nbsp Importance:
+
+
+            <input type="radio"  value="0" name="b">
+            <input type="radio"  value="1" name="b">
+            <input type="radio"  value="2" name="b">
+            <input type="radio"  value="3" name="b">
+            <input type="radio"  value="4" name="b">
+            <input type="radio"  value="5" name="b">
+            <input type="radio"  value="6" name="b">
+            <input type="radio"  value="7" name="b">
+            <input type="radio"  value="8" name="b">
+            <input type="radio"  value="9" name="b">
+
+
+            <button>Submit</button>
+
+
+            <br />
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9
+
+
+
+
+      </article8>
+
+      <article9 id="Dorms">
+         <br /> &nbsp Dorms: <br /> <br />
+         &nbsp Importance:
+
+
+            <input type="radio"  value="0" name="b">
+            <input type="radio"  value="1" name="b">
+            <input type="radio"  value="2" name="b">
+            <input type="radio"  value="3" name="b">
+            <input type="radio"  value="4" name="b">
+            <input type="radio"  value="5" name="b">
+            <input type="radio"  value="6" name="b">
+            <input type="radio"  value="7" name="b">
+            <input type="radio"  value="8" name="b">
+            <input type="radio"  value="9" name="b">
+
+
+            <button>Submit</button>
+
+
+            <br />
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9
+
+
+
+
+      </article9>
+
+      <article10 id="Food">
+         <br /> &nbsp Food: <br /> <br />
+         &nbsp Importance:
+
+
+            <input type="radio"  value="0" name="b">
+            <input type="radio"  value="1" name="b">
+            <input type="radio"  value="2" name="b">
+            <input type="radio"  value="3" name="b">
+            <input type="radio"  value="4" name="b">
+            <input type="radio"  value="5" name="b">
+            <input type="radio"  value="6" name="b">
+            <input type="radio"  value="7" name="b">
+            <input type="radio"  value="8" name="b">
+            <input type="radio"  value="9" name="b">
+
+
+            <button>Submit</button>
+
+
+            <br />
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9
+
+
+
+
+      </article10>
+
+      <article11 id="publicValue">
+         <br /> &nbsp Public College Value: <br /> <br />
+         &nbsp Importance:
+
+
+            <input type="radio"  value="0" name="b">
+            <input type="radio"  value="1" name="b">
+            <input type="radio"  value="2" name="b">
+            <input type="radio"  value="3" name="b">
+            <input type="radio"  value="4" name="b">
+            <input type="radio"  value="5" name="b">
+            <input type="radio"  value="6" name="b">
+            <input type="radio"  value="7" name="b">
+            <input type="radio"  value="8" name="b">
+            <input type="radio"  value="9" name="b">
+
+
+            <button>Submit</button>
+
+
+            <br />
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9
+
+
+   </article11>
+
+   <article12 id="privateValue">
+         <br /> &nbsp Private College Value: <br /> <br />
+         &nbsp Importance:
+
+
+            <input type="radio"  value="0" name="b">
+            <input type="radio"  value="1" name="b">
+            <input type="radio"  value="2" name="b">
+            <input type="radio"  value="3" name="b">
+            <input type="radio"  value="4" name="b">
+            <input type="radio"  value="5" name="b">
+            <input type="radio"  value="6" name="b">
+            <input type="radio"  value="7" name="b">
+            <input type="radio"  value="8" name="b">
+            <input type="radio"  value="9" name="b">
+
+
+            <button>Submit</button>
+
+
+            <br />
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9
+
+
+
+
+      </article12>
+
+      <article13 id="publicIC">
+         <br /> &nbsp Internships (Public Colleges): <br /> <br />
+         &nbsp Importance:
+
+
+            <input type="radio"  value="0" name="b">
+            <input type="radio"  value="1" name="b">
+            <input type="radio"  value="2" name="b">
+            <input type="radio"  value="3" name="b">
+            <input type="radio"  value="4" name="b">
+            <input type="radio"  value="5" name="b">
+            <input type="radio"  value="6" name="b">
+            <input type="radio"  value="7" name="b">
+            <input type="radio"  value="8" name="b">
+            <input type="radio"  value="9" name="b">
+
+
+            <button>Submit</button>
+
+
+            <br />
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9
+
+
+
+
+      </article13>
+
+      <article14 id="privateIC">
+         <br /> &nbsp Internships (Private Colleges): <br /> <br />
+         &nbsp Importance:
+
+
+            <input type="radio"  value="0" name="b">
+            <input type="radio"  value="1" name="b">
+            <input type="radio"  value="2" name="b">
+            <input type="radio"  value="3" name="b">
+            <input type="radio"  value="4" name="b">
+            <input type="radio"  value="5" name="b">
+            <input type="radio"  value="6" name="b">
+            <input type="radio"  value="7" name="b">
+            <input type="radio"  value="8" name="b">
+            <input type="radio"  value="9" name="b">
+
+
+            <button>Submit</button>
+
+
+            <br />
+
+
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp;&nbsp;1&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9
+
+
+
+
+      </article14>
+
+		<!-- PreReport -->
+		<article50 id="PreReport">
+			<br />
+			<button onclick="PreReportF()">Generate Pre-Report</button>
+        </article50>
+
+		<!-- Send Variables over -->
+		<article51 id="FinalReport">
+			<br />
+			<button onclick="FinalReportF()">Get Your Rankings</button>
+		</article51>
+
+    </body>
+</html>
