@@ -1,3 +1,6 @@
+Project Timeline:
+
+
 9/30 - Create user interface for Intended major, and safety attributes, basic UI
 
 10/1 - Add tuition cutoff, generate report in console for selected attributes, started to work on storing importance values as variables
