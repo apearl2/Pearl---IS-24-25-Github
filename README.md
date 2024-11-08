@@ -36,3 +36,19 @@ Project Timeline:
         #Program now runs (with all 14 attributes) in about 45 seconds
 
 11-3 -> Add project to GitHub, first Flask project with user input
+
+11/4 -> Began building first HTML templates and putting rest of python into Flask program
+	Downloaded python 3.13.0     (previously using python 3.8)
+Whole program works with first 3 college factual attributes
+
+11/5 -> Put rest of attributes (P) into front end
+#TODO figure out way to ensure calculate() function gets all attribute selections before running content of function
+	Might have to break up HTML pages to run CF, and then P attributes
+            Could be recording everything past main url as string, then using string methods
+	Research more on Request library from Flask https://flask.palletsprojects.com/en/stable/api/#flask.Request
+
+11/6 -> Revised method for taking input broken into 3 page stages: home, in_progress, and results. New structure now works for all 3 college factual attributes
+
+11/7 -> Created called variable to ensure string is only split when CF/P functions are actually
+	New structure works through joinA() for all 14 attributes.
+
